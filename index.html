@@ -65,6 +65,10 @@ ol.news li:last-child { border-bottom: 0; }
 .bar span { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--muted); }
 .bar span.good { background: var(--up); }
 .rules { margin: 0; padding-left: 1.2em; color: var(--muted); font-size: 14px; }
+.switch { display: flex; gap: 6px; margin-bottom: 10px; font-size: 13px; }
+.switch a, .switch b { padding: 2px 12px; border: 1px solid var(--line); border-radius: 99px; text-decoration: none; color: var(--muted); }
+.switch b { color: var(--fg); border-color: var(--muted); font-weight: 500; }
+.switch a:hover, .switch a:focus-visible { color: var(--accent); }
 footer { font-size: 12px; color: var(--muted); }
 @media (max-width: 600px) { .reason { display: none; } th.r { display: none; } }
 </style>
@@ -72,6 +76,7 @@ footer { font-size: 12px; color: var(--muted); }
 <body>
 <div class="wrap">
   <header>
+    <nav class="switch"><b>台股版</b><a href="us/">美股版</a></nav>
     <h1>台股新聞預測站</h1>
     <p class="lead">10/27（二）台股預測：看漲 <b class="up">1</b> 檔、看跌 <b class="down">8</b> 檔，整體偏空。</p>
     <p>每個交易日 06:00 依新聞預測、16:00 收盤後驗證。紅漲綠跌。</p>
@@ -118,7 +123,7 @@ footer { font-size: 12px; color: var(--muted); }
     </ol>
   </section>
 
-  <footer>內容由 AI 自動產生，僅供研究參考，不構成投資建議。最後更新：2026-10-24 14:20（台灣時間）</footer>
+  <footer>內容由 AI 自動產生，僅供研究參考，不構成投資建議。最後更新：2026-10-24 18:05（台灣時間）</footer>
 </div>
 </body>
 </html>
