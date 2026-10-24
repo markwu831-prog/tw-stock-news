@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台股新聞預測站</title>
+<meta name="description" content="每天 06:00 用 10 則台股新聞預測 9 檔個股漲跌，16:00 收盤後驗證，累計命中率。">
+<meta property="og:title" content="台股新聞預測站｜10/27（二）預測">
+<meta property="og:description" content="看漲 1 檔、看跌 8 檔，整體偏空。累計命中率 尚無。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* 版面：單欄閱讀寬度，摘要數字在上、明細在下；紅漲綠跌 */
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --fg: #1b1f27; --muted: #5d6573; --line: #e2e5ea;
+  --up: #d1242f; --down: #12805c; --accent: #2b4a8b; --track: #eceff3;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #12151b; --panel: #1a1e26; --fg: #e8eaee; --muted: #9aa3b2; --line: #2b313c;
+          --up: #ff6b6b; --down: #3ecf8e; --accent: #8fb0ff; --track: #262c36; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 var(--sans); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 28px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); display: grid; gap: 20px; }
+header h1 { font-family: var(--serif); font-weight: 700; font-size: clamp(26px, 5vw, 34px); margin: 0; letter-spacing: .02em; }
+header p { margin: 4px 0 0; color: var(--muted); }
+.lead { font-size: 17px; color: var(--fg); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.tile .l { font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+.tile .b { font-family: var(--serif); font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1.25; }
+.tile .s { font-size: 12px; color: var(--muted); }
+section.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; min-width: 0; }
+section.card h2 { font-size: 17px; margin: 0 0 4px; font-weight: 700; }
+.note { margin: 0 0 12px; font-size: 13px; color: var(--muted); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 20px; }
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-size: 12px; font-weight: 500; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+.num { text-align: right; white-space: nowrap; }
+.code { color: var(--muted); white-space: nowrap; }
+.stock, .dir { white-space: nowrap; font-weight: 500; }
+.reason { color: var(--muted); font-size: 14px; min-width: 200px; }
+.up { color: var(--up); } .down { color: var(--down); } .muted { color: var(--muted); }
+.pill { display: inline-block; font-size: 12px; padding: 0 8px; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); }
+.pill.hi { color: var(--fg); border-color: var(--muted); }
+ol.news { list-style: none; margin: 0; padding: 0; display: grid; }
+ol.news li { display: grid; grid-template-columns: 2em 1fr; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+ol.news li:last-child { border-bottom: 0; }
+.rank { font-family: var(--serif); font-size: 20px; color: var(--muted); line-height: 1.3; }
+.nb { min-width: 0; }
+.nh a { color: var(--fg); font-weight: 500; text-decoration: none; }
+.nh a:hover, .nh a:focus-visible { color: var(--accent); text-decoration: underline; }
+.nh .dir { font-size: 12px; margin-left: 4px; }
+.nd { font-size: 14px; color: var(--muted); }
+.nm { font-size: 12px; color: var(--muted); }
+.empty { color: var(--muted); margin: 8px 0; }
+.barwrap { display: flex; align-items: center; gap: 8px; }
+.bar { flex: 1; position: relative; height: 8px; border-radius: 99px; background: var(--track); min-width: 60px; }
+.bar span { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--muted); }
+.bar span.good { background: var(--up); }
+.rules { margin: 0; padding-left: 1.2em; color: var(--muted); font-size: 14px; }
+footer { font-size: 12px; color: var(--muted); }
+@media (max-width: 600px) { .reason { display: none; } th.r { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>台股新聞預測站</h1>
+    <p class="lead">10/27（二）台股預測：看漲 <b class="up">1</b> 檔、看跌 <b class="down">8</b> 檔，整體偏空。</p>
+    <p>每個交易日 06:00 依新聞預測、16:00 收盤後驗證。紅漲綠跌。</p>
+  </header>
+
+  <div class="tiles">
+    <div class="tile"><div class="l">預測交易日</div><div class="b">10/27（二）</div><div class="s">收盤 vs 前一交易日收盤</div></div>
+    <div class="tile"><div class="l">看漲 ／ 看跌</div><div class="b"><span class="up">1</span> <span class="muted">/</span> <span class="down">8</span></div><div class="s">共 9 檔</div></div>
+    <div class="tile"><div class="l">累計命中率</div><div class="b">尚無</div><div class="s">0 中 ／ 0 檔次</div></div>
+    <div class="tile"><div class="l">已驗證交易日</div><div class="b">0</div><div class="s">天</div></div>
+  </div>
+
+  <section class="card" id="today">
+    <h2>今日預測</h2>
+    <p class="note">信心分低、中、高。</p>
+    <div class="scroll"><table>
+      <thead><tr><th>代號</th><th>股票</th><th>預測</th><th>信心</th><th class="num">前收</th><th class="r">理由</th></tr></thead>
+      <tbody><tr><td class="code">0050</td><td class="stock">元大台灣50</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">中</span></td><td class="num">106.9</td><td class="reason">權值股台積電、聯發科、台達電都要補反映費半兩天約 6% 的跌幅</td></tr><tr><td class="code">2330</td><td class="stock">台積電</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">中</span></td><td class="num">2,385</td><td class="reason">ADR 休市期間合計跌約 3.1%，加上 F22 工安停工與外資連續賣超</td></tr><tr><td class="code">2317</td><td class="stock">鴻海</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">低</span></td><td class="num">245</td><td class="reason">DSX POD 題材與法人買超撐盤，本週唯一收紅；但大盤補跌時難完全抗跌</td></tr><tr><td class="code">2454</td><td class="stock">聯發科</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">中</span></td><td class="num">4,010</td><td class="reason">連四周收黑、外資持續賣；花旗力挺與 10/30 法說是反彈變數</td></tr><tr><td class="code">2303</td><td class="stock">聯電</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">低</span></td><td class="num">125.5</td><td class="reason">成熟製程受 AI 疑慮較間接，但半導體族群同步承壓</td></tr><tr><td class="code">2409</td><td class="stock">友達</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">低</span></td><td class="num">35.4</td><td class="reason">面板股波動大、10/22 已跌 5%；風險情緒偏空時通常先被賣</td></tr><tr><td class="code">2308</td><td class="stock">台達電</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">中</span></td><td class="num">1,560</td><td class="reason">AI 電源與散熱直接受 AI 資本支出疑慮衝擊，外資已連續調節</td></tr><tr><td class="code">2327</td><td class="stock">國巨</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">507</td><td class="reason">漲價與 Q3 營收年增近五成的基本面，10/22 已先跌 6.5% 反映部分疑慮</td></tr><tr><td class="code">3481</td><td class="stock">群創</td><td><span class="down dir">▼ 看跌</span></td><td><span class="pill">低</span></td><td class="num">46.75</td><td class="reason">與友達同為高波動面板股，跟隨大盤風險情緒</td></tr></tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="news">
+    <h2>預測依據：10 則台股新聞</h2>
+    <p class="note">已排除盤前預測、台指期夜盤與「今天會漲會跌」類文章。點標題看原文。</p>
+    <ol class="news"><li><span class="rank">1</span><div class="nb"><div class="nh"><a href="https://en.sedaily.com/finance/2026/10/23/chip-shares-slide-as-ai-spending-fears-outweigh-solidigm" target="_blank" rel="noopener">費半重挫 6.72%、30 檔全跌，Meta 現金流轉負引爆 AI 融資疑慮</a> <span class="down dir">利空</span></div><div class="nd">台股 10/22 下午已收盤，這波賣壓還沒反映；輝達跌 4.4%、美光跌 6.3%，AMD 跌 8.1%</div><div class="nm">2026-10-22 美股收盤後 · 2330、2454、2308、0050</div></div></li><li><span class="rank">2</span><div class="nb"><div class="nh"><a href="https://stockanalysis.com/stocks/tsm/history/" target="_blank" rel="noopener">台積電 ADR 兩天先跌 4.52% 再彈 1.49%，費半 10/23 小漲 0.44%</a> <span class="down dir">利空</span></div><div class="nd">ADR 兩日合計約跌 3.1%、費半合計約跌 6.3%；台股休市四天後 10/27 才會一次反映</div><div class="nm">2026-10-23 美股收盤 · 2330、0050</div></div></li><li><span class="rank">3</span><div class="nb"><div class="nh"><a href="https://finance.ettoday.net/news/3259149" target="_blank" rel="noopener">台股開高走低重挫 846 點收 46041 點，盤中震盪 1290 點</a> <span class="down dir">利空</span></div><div class="nd">成交值 8792 億元；台積電跌 35 元收 2385、聯發科跌 130 元、鴻海跌 5 元；颱風消息打亂反彈</div><div class="nm">2026-10-22 13:35 · 0050、2330、2454、2317</div></div></li><li><span class="rank">4</span><div class="nb"><div class="nh"><a href="https://www.ctee.com.tw/news/20261022702278-430201" target="_blank" rel="noopener">薔琵颱風來襲 台股 10/23 休市，加上光復節補假 10/26 連休四天</a> <span class="muted dir">中性</span></div><div class="nd">證交所宣布 10/23 全日休市、交割順延；下一個交易日為 10/27（週二）</div><div class="nm">2026-10-22 · 0050</div></div></li><li><span class="rank">5</span><div class="nb"><div class="nh"><a href="https://udn.com/news/story/7251/9834831" target="_blank" rel="noopener">本週權值股：鴻海唯一收紅，外資賣超台積電 3.8 萬張</a> <span class="muted dir">中性</span></div><div class="nd">鴻海周漲 0.41%、法人買超 2.1 萬張；聯發科周跌 5.65% 連四黑；台達電周跌 4.59%；加權指數周跌 2.27%</div><div class="nm">2026-10-24 11:49 · 2317、2330、2454、2308</div></div></li><li><span class="rank">6</span><div class="nb"><div class="nh"><a href="https://news.cnyes.com/news/id/6635276" target="_blank" rel="noopener">輝達推 DSX POD 模組化 AI 工廠，鴻佰、台達電等六家台廠入列</a> <span class="up dir">利多</span></div><div class="nd">部署時間可從約 6 個月縮短到最快 14 天，2027 年初開始全球交付；和碩、雲達、緯創、技嘉同列</div><div class="nm">2026-10-21 21:13 · 2317、2308</div></div></li><li><span class="rank">7</span><div class="nb"><div class="nh"><a href="https://udn.com/news/story/7252/9832272" target="_blank" rel="noopener">花旗力挺聯發科、維持目標價 6800 元，10/30 法說前預估 Q4 營收季增三成</a> <span class="up dir">利多</span></div><div class="nd">AI ASIC 專案回到正軌，上修 2026～2028 年 EPS；但本益比從 35 倍降到 30 倍，並點出 TPU v9 良率風險</div><div class="nm">2026-10-22 21:49 · 2454</div></div></li><li><span class="rank">8</span><div class="nb"><div class="nh"><a href="https://udn.com/news/story/7251/9833309" target="_blank" rel="noopener">被動元件漲價未歇，法人看好國巨評價追趕日韓同業</a> <span class="up dir">利多</span></div><div class="nd">Q3 營收約 495.3 億元年增 49.7%；訂單出貨比約 2、產能利用率約九成；消費規格 MLCC 目標漲 20%～30%</div><div class="nm">2026-10-23 13:15 · 2327</div></div></li><li><span class="rank">9</span><div class="nb"><div class="nh"><a href="https://udn.com/news/story/7338/9832547" target="_blank" rel="noopener">台積電高雄 F22 工地 10/20 工安意外 4 死，全台新廠鋼構工程停工</a> <span class="down dir">利空</span></div><div class="nd">鋼構吊掛螺栓斷裂、4 名外包工人墜落；台積電下令全台新廠鋼構作業停工至改善計畫核可</div><div class="nm">2026-10-23 · 2330</div></div></li><li><span class="rank">10</span><div class="nb"><div class="nh"><a href="https://money.udn.com/money/story/5607/9832642" target="_blank" rel="noopener">特斯拉下修全年資本支出至 200 億美元，牽動台灣供應鏈</a> <span class="down dir">利空</span></div><div class="nd">特斯拉 Q3 獲利優於預期但股價重挫；電動車與能源相關台廠訂單能見度受關注</div><div class="nm">2026-10-23 04:10 · 2308、2317</div></div></li></ol>
+  </section>
+
+  <section class="card" id="check">
+    <h2>最近一次驗證</h2>
+    <p class="empty">還沒有驗證結果。第一次驗證在下一個交易日 16:00 收盤後。</p>
+  </section>
+
+  <div class="grid2">
+    <section class="card" id="by-stock"><h2>各股命中率</h2><p class="note">自開站以來每檔猜對的次數。</p><div class="scroll"><p class="empty">累積第一筆驗證後顯示。</p></div></section>
+    <section class="card" id="by-day"><h2>每日命中率</h2><p class="note">每個交易日 9 檔中猜對的比例。</p><div class="scroll"><p class="empty">累積第一筆驗證後顯示。</p></div></section>
+  </div>
+
+  <section class="card" id="method">
+    <h2>怎麼做的</h2>
+    <ol class="rules">
+      <li>每個交易日 06:00（台灣時間）從新聞挑 10 則最可能影響台股的新聞，排除盤前漲跌預測。</li>
+      <li>判斷 0050、台積電、鴻海、聯發科、聯電、友達、台達電、國巨、群創當天收盤比前一交易日收盤漲或跌。</li>
+      <li>13:30 收盤後，16:00 用公開收盤價驗證並累計命中率。休市日（含颱風假）不預測。</li>
+    </ol>
+  </section>
+
+  <footer>內容由 AI 自動產生，僅供研究參考，不構成投資建議。最後更新：2026-10-24 14:20（台灣時間）</footer>
+</div>
+</body>
+</html>
