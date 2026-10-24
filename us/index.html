@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美股新聞預測站</title>
+<meta name="description" content="每天台灣時間晚上 7 點用 10 則財經新聞預測半導體與美股 9 檔標的漲跌，隔天早上 7 點收盤後驗證，累計命中率。">
+<meta property="og:title" content="美股新聞預測站｜10/23（五）預測">
+<meta property="og:description" content="看漲 9 檔、看跌 0 檔，整體偏多。累計命中率 76%。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* 版面：單欄閱讀寬度，摘要數字在上、明細在下；紅漲綠跌 */
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --fg: #1b1f27; --muted: #5d6573; --line: #e2e5ea;
+  --up: #d1242f; --down: #12805c; --accent: #2b4a8b; --track: #eceff3;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #12151b; --panel: #1a1e26; --fg: #e8eaee; --muted: #9aa3b2; --line: #2b313c;
+          --up: #ff6b6b; --down: #3ecf8e; --accent: #8fb0ff; --track: #262c36; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 var(--sans); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 28px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); display: grid; gap: 20px; }
+header h1 { font-family: var(--serif); font-weight: 700; font-size: clamp(26px, 5vw, 34px); margin: 0; letter-spacing: .02em; }
+header p { margin: 4px 0 0; color: var(--muted); }
+.lead { font-size: 17px; color: var(--fg); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.tile .l { font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+.tile .b { font-family: var(--serif); font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1.25; }
+.tile .s { font-size: 12px; color: var(--muted); }
+section.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; min-width: 0; }
+section.card h2 { font-size: 17px; margin: 0 0 4px; font-weight: 700; }
+.note { margin: 0 0 12px; font-size: 13px; color: var(--muted); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 20px; }
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-size: 12px; font-weight: 500; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+.num { text-align: right; white-space: nowrap; }
+.code { color: var(--muted); white-space: nowrap; }
+.stock, .dir { white-space: nowrap; font-weight: 500; }
+.reason { color: var(--muted); font-size: 14px; min-width: 200px; }
+.up { color: var(--up); } .down { color: var(--down); } .muted { color: var(--muted); }
+.pill { display: inline-block; font-size: 12px; padding: 0 8px; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); }
+.pill.hi { color: var(--fg); border-color: var(--muted); }
+ol.news { list-style: none; margin: 0; padding: 0; display: grid; }
+ol.news li { display: grid; grid-template-columns: 2em 1fr; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+ol.news li:last-child { border-bottom: 0; }
+.rank { font-family: var(--serif); font-size: 20px; color: var(--muted); line-height: 1.3; }
+.nb { min-width: 0; }
+.nh a { color: var(--fg); font-weight: 500; text-decoration: none; }
+.nh a:hover, .nh a:focus-visible { color: var(--accent); text-decoration: underline; }
+.nh .dir { font-size: 12px; margin-left: 4px; }
+.nd { font-size: 14px; color: var(--muted); }
+.nm { font-size: 12px; color: var(--muted); }
+.empty { color: var(--muted); margin: 8px 0; }
+.barwrap { display: flex; align-items: center; gap: 8px; }
+.bar { flex: 1; position: relative; height: 8px; border-radius: 99px; background: var(--track); min-width: 60px; }
+.bar span { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--muted); }
+.bar span.good { background: var(--up); }
+.rules { margin: 0; padding-left: 1.2em; color: var(--muted); font-size: 14px; }
+.switch { display: flex; gap: 6px; margin-bottom: 10px; font-size: 13px; }
+.switch a, .switch b { padding: 2px 12px; border: 1px solid var(--line); border-radius: 99px; text-decoration: none; color: var(--muted); }
+.switch b { color: var(--fg); border-color: var(--muted); font-weight: 500; }
+.switch a:hover, .switch a:focus-visible { color: var(--accent); }
+footer { font-size: 12px; color: var(--muted); }
+@media (max-width: 600px) { .reason { display: none; } th.r { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav class="switch"><a href="../">台股版</a><b>美股版</b></nav>
+    <h1>美股新聞預測站</h1>
+    <p class="lead">10/23（五）美股預測：看漲 <b class="up">9</b> 檔、看跌 <b class="down">0</b> 檔，整體偏多。</p>
+    <p>每個美股交易日台灣時間晚上 7 點依新聞預測、隔天早上 7 點收盤後驗證。紅漲綠跌。</p>
+  </header>
+
+  <div class="tiles">
+    <div class="tile"><div class="l">預測交易日</div><div class="b">10/23（五）</div><div class="s">收盤 vs 前一交易日收盤</div></div>
+    <div class="tile"><div class="l">看漲 ／ 看跌</div><div class="b"><span class="up">9</span> <span class="muted">/</span> <span class="down">0</span></div><div class="s">共 9 檔</div></div>
+    <div class="tile"><div class="l">累計命中率</div><div class="b">76%</div><div class="s">34 中 ／ 45 檔次</div></div>
+    <div class="tile"><div class="l">已驗證交易日</div><div class="b">5</div><div class="s">天</div></div>
+  </div>
+
+  <section class="card" id="today">
+    <h2>今日預測</h2>
+    <p class="note">信心分低、中、高。</p>
+    <div class="scroll"><table>
+      <thead><tr><th>代號</th><th>標的</th><th>預測</th><th>信心</th><th class="num">前收</th><th class="r">理由</th></tr></thead>
+      <tbody><tr><td class="code">SMH</td><td class="stock">半導體 ETF</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">523.35</td><td class="reason">費半單日重挫 6.7% 後技術性反彈機率高；殖利率跌破 5%、SK 海力士翻紅收漲 4.7%</td></tr><tr><td class="code">TSM</td><td class="stock">台積電 ADR</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">412.35</td><td class="reason">跟隨族群反彈；但 ASML 跌 5% 顯示設備鏈情緒仍弱</td></tr><tr><td class="code">NVDA</td><td class="stock">輝達</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">212.21</td><td class="reason">跌 4.4% 後低接；AI 融資疑慮未解，反彈力道可能有限</td></tr><tr><td class="code">MU</td><td class="stock">美光</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">856.49</td><td class="reason">SK 海力士收漲 4.7% 偏多；威騰電子盤後再跌 6.7% 是反方力量</td></tr><tr><td class="code">AMD</td><td class="stock">超微</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">507.93</td><td class="reason">前一天跌 8.1% 為族群最重，超跌反彈空間較大</td></tr><tr><td class="code">SOX</td><td class="stock">費城半導體指數</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">10,731.98</td><td class="reason">與 SMH 同理</td></tr><tr><td class="code">VOO</td><td class="stock">標普 500 ETF</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">702.3</td><td class="reason">公債大漲、殖利率跌破 5%、失業金人數低；油價 113 美元是主要風險</td></tr><tr><td class="code">QQQ</td><td class="stock">那斯達克 100 ETF</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">704.47</td><td class="reason">殖利率大跌有利成長股；Meta 財務疑慮仍在</td></tr><tr><td class="code">NASDAQ</td><td class="stock">那斯達克綜合指數</td><td><span class="up dir">▲ 看漲</span></td><td><span class="pill">低</span></td><td class="num">26,008.86</td><td class="reason">與 QQQ 同理</td></tr></tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="news">
+    <h2>預測依據：10 則財經新聞</h2>
+    <p class="note">已排除美股期貨、盤前漲跌類新聞。點標題看原文。</p>
+    <ol class="news"><li><span class="rank">1</span><div class="nb"><div class="nh"><a href="https://en.sedaily.com/finance/2026/10/23/chip-shares-slide-as-ai-spending-fears-outweigh-solidigm" target="_blank" rel="noopener">費半重挫 6.72%，30 檔成分股全跌；那指跌 2.6% 創 6 月來最大跌幅</a> <span class="down dir">利空</span></div><div class="nd">Meta 自由現金流負 21.2 億美元為上市後首見，未來支出承諾約 8250 億美元，信用違約交換創新高，引爆 AI 融資疑慮；輝達跌 4.4%、美光跌 6.3%</div><div class="nm">10/22 美東收盤後 · SMH、SOX、NVDA、MU、AMD、QQQ</div></div></li><li><span class="rank">2</span><div class="nb"><div class="nh"><a href="https://www.tradingkey.com/analysis/stocks/more/262235221-japan-korea-stocks-close-mixed-kospi-rebound-sk-hynix-samsung-kioxia-tradingkey" target="_blank" rel="noopener">韓股盤中一度跌 4.12% 後翻紅收漲 0.30%，SK 海力士收漲 4.74%</a> <span class="up dir">利多</span></div><div class="nd">三星收漲 0.47%、鎧俠漲 1.27%；記憶體股出現低接買盤</div><div class="nm">10/23 韓國收盤 · MU、SMH、SOX</div></div></li><li><span class="rank">3</span><div class="nb"><div class="nh"><a href="https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take-october-23-2026-23102026" target="_blank" rel="noopener">美國 10 年期公債殖利率大跌 15～17 個基點至約 4.96%，一個月來首次跌破 5%</a> <span class="up dir">利多</span></div><div class="nd">2 年期約 4.66%；公債創 2024 年以來最強漲勢；期貨市場不再完全反映今年再升息</div><div class="nm">10/22 美東 · VOO、QQQ、SMH</div></div></li><li><span class="rank">4</span><div class="nb"><div class="nh"><a href="https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take-october-23-2026-23102026" target="_blank" rel="noopener">布蘭特原油漲 4% 收在約 113 美元，創 5 月初以來最高</a> <span class="down dir">利空</span></div><div class="nd">胡塞武裝攻擊沙烏地石油設施；傳美國可能再度空襲伊朗</div><div class="nm">10/22 美東 · VOO、QQQ</div></div></li><li><span class="rank">5</span><div class="nb"><div class="nh"><a href="https://cappnotes.substack.com/p/closing-look-thursday-october-22" target="_blank" rel="noopener">威騰電子財測優於預期，但盤後再跌約 6.7%</a> <span class="down dir">利空</span></div><div class="nd">盤中已跌 6.43%；儲存與記憶體族群籌碼面偏弱</div><div class="nm">10/22 美東盤後 · MU</div></div></li><li><span class="rank">6</span><div class="nb"><div class="nh"><a href="https://en.sedaily.com/finance/2026/10/23/chip-shares-slide-as-ai-spending-fears-outweigh-solidigm" target="_blank" rel="noopener">SK 海力士暫停旗下 Solidigm 美國 IPO 計畫</a> <span class="muted dir">中性</span></div><div class="nd">理由是資本市場波動；南韓監管機關關切母公司股東權益</div><div class="nm">10/23 09:29 KST · MU</div></div></li><li><span class="rank">7</span><div class="nb"><div class="nh"><a href="https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take-october-23-2026-23102026" target="_blank" rel="noopener">美國初領失業救濟金減少 6000 人至 19.4 萬人，低於預期</a> <span class="muted dir">中性</span></div><div class="nd">續領人數增加 2.5 萬至 172.8 萬；就業市場仍穩</div><div class="nm">10/22 · VOO</div></div></li><li><span class="rank">8</span><div class="nb"><div class="nh"><a href="https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take-october-23-2026-23102026" target="_blank" rel="noopener">歐股：ASML 跌 5.0%，Stoxx 600 跌 1.0%</a> <span class="down dir">利空</span></div><div class="nd">Nokia 跌 9.7%、西門子能源跌 8.6%；歐洲科技股同步承壓</div><div class="nm">10/22 · SMH、SOX</div></div></li><li><span class="rank">9</span><div class="nb"><div class="nh"><a href="https://investrade.com/weekly-event-calendar-10-19-2026-10-23-2026/" target="_blank" rel="noopener">今天公布 10 月 S&amp;P 全球 PMI 初值與密大消費者信心終值</a> <span class="muted dir">中性</span></div><div class="nd">美國運通與斯倫貝謝盤前公布財報</div><div class="nm">10/23 09:45 ET · VOO、QQQ</div></div></li><li><span class="rank">10</span><div class="nb"><div class="nh"><a href="https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take-october-23-2026-23102026" target="_blank" rel="noopener">中國滬深 300 進入熊市，自 5 月高點蒸發 2.4 兆美元</a> <span class="down dir">利空</span></div><div class="nd">日本 9 月核心 CPI 2.1%；台股據報因颱風休市（僅單一來源）</div><div class="nm">10/23 · TSM</div></div></li></ol>
+  </section>
+
+  <section class="card" id="check">
+    <h2>最近一次驗證</h2>
+    <p class="note">10/23（五）：命中 5／9。平盤不列入命中率。</p><div class="scroll"><table><thead><tr><th>代號</th><th>標的</th><th class="num">前收</th><th class="num">收盤</th><th class="num">實際</th><th>預測</th><th>結果</th></tr></thead><tbody><tr><td class="code">SMH</td><td class="stock">半導體 ETF</td><td class="num">523.35</td><td class="num">527.2</td><td class="num"><span class="up">+0.74%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">✅ 命中</td></tr><tr><td class="code">TSM</td><td class="stock">台積電 ADR</td><td class="num">412.35</td><td class="num">418.51</td><td class="num"><span class="up">+1.49%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">✅ 命中</td></tr><tr><td class="code">NVDA</td><td class="stock">輝達</td><td class="num">212.21</td><td class="num">210.96</td><td class="num"><span class="down">-0.59%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">❌ 失準</td></tr><tr><td class="code">MU</td><td class="stock">美光</td><td class="num">856.49</td><td class="num">877.55</td><td class="num"><span class="up">+2.46%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">✅ 命中</td></tr><tr><td class="code">AMD</td><td class="stock">超微</td><td class="num">507.93</td><td class="num">516.79</td><td class="num"><span class="up">+1.74%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">✅ 命中</td></tr><tr><td class="code">SOX</td><td class="stock">費城半導體指數</td><td class="num">10,731.98</td><td class="num">10,779.46</td><td class="num"><span class="up">+0.44%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">✅ 命中</td></tr><tr><td class="code">VOO</td><td class="stock">標普 500 ETF</td><td class="num">702.3</td><td class="num">698.58</td><td class="num"><span class="down">-0.53%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">❌ 失準</td></tr><tr><td class="code">QQQ</td><td class="stock">那斯達克 100 ETF</td><td class="num">704.47</td><td class="num">704.4</td><td class="num"><span class="down">-0.01%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">❌ 失準</td></tr><tr><td class="code">NASDAQ</td><td class="stock">那斯達克綜合指數</td><td class="num">26,008.86</td><td class="num">25,955.34</td><td class="num"><span class="down">-0.21%</span></td><td><span class="up dir">▲ 看漲</span></td><td class="dir">❌ 失準</td></tr></tbody></table></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" id="by-stock"><h2>各標的命中率</h2><p class="note">自開站以來每檔猜對的次數。</p><div class="scroll"><table><thead><tr><th>代號</th><th>標的</th><th class="num">命中</th><th>命中率</th></tr></thead><tbody><tr><td class="code">SMH</td><td class="stock">半導體 ETF</td><td class="num">4／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:80%"></span></div><span class="num">80%</span></div></td></tr><tr><td class="code">TSM</td><td class="stock">台積電 ADR</td><td class="num">5／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:100%"></span></div><span class="num">100%</span></div></td></tr><tr><td class="code">NVDA</td><td class="stock">輝達</td><td class="num">2／5</td><td><div class="barwrap"><div class="bar"><span class="" style="width:40%"></span></div><span class="num">40%</span></div></td></tr><tr><td class="code">MU</td><td class="stock">美光</td><td class="num">5／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:100%"></span></div><span class="num">100%</span></div></td></tr><tr><td class="code">AMD</td><td class="stock">超微</td><td class="num">5／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:100%"></span></div><span class="num">100%</span></div></td></tr><tr><td class="code">SOX</td><td class="stock">費城半導體指數</td><td class="num">5／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:100%"></span></div><span class="num">100%</span></div></td></tr><tr><td class="code">VOO</td><td class="stock">標普 500 ETF</td><td class="num">2／5</td><td><div class="barwrap"><div class="bar"><span class="" style="width:40%"></span></div><span class="num">40%</span></div></td></tr><tr><td class="code">QQQ</td><td class="stock">那斯達克 100 ETF</td><td class="num">3／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:60%"></span></div><span class="num">60%</span></div></td></tr><tr><td class="code">NASDAQ</td><td class="stock">那斯達克綜合指數</td><td class="num">3／5</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:60%"></span></div><span class="num">60%</span></div></td></tr></tbody></table></div></section>
+    <section class="card" id="by-day"><h2>每日命中率</h2><p class="note">每個交易日 9 檔中猜對的比例。</p><div class="scroll"><table><thead><tr><th>交易日</th><th class="num">命中</th><th>命中率</th></tr></thead><tbody><tr><td>10/23（五）</td><td class="num">5／9</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:56%"></span></div><span class="num">56%</span></div></td></tr><tr><td>10/22（四）</td><td class="num">9／9</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:100%"></span></div><span class="num">100%</span></div></td></tr><tr><td>10/21（三）</td><td class="num">5／9</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:56%"></span></div><span class="num">56%</span></div></td></tr><tr><td>10/20（二）</td><td class="num">6／9</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:67%"></span></div><span class="num">67%</span></div></td></tr><tr><td>10/19（一）</td><td class="num">9／9</td><td><div class="barwrap"><div class="bar"><span class="good" style="width:100%"></span></div><span class="num">100%</span></div></td></tr></tbody></table></div></section>
+  </div>
+
+  <section class="card" id="method">
+    <h2>怎麼做的</h2>
+    <ol class="rules">
+      <li>每個美股交易日台灣時間晚上 7 點（美股開盤前）挑 10 則最可能影響半導體的財經新聞，排除期貨與盤前漲跌。</li>
+      <li>判斷 SMH、台積電 ADR、輝達、美光、超微、費城半導體指數、VOO、QQQ、那斯達克綜合指數當天收盤比前一交易日收盤漲或跌。</li>
+      <li>美股收盤後，台灣時間隔天早上 7 點用公開收盤價驗證並累計命中率。美股休市日不預測。</li>
+    </ol>
+  </section>
+
+  <footer>內容由 AI 自動產生，僅供研究參考，不構成投資建議。最後更新：2026-10-24 18:05（台灣時間）</footer>
+</div>
+</body>
+</html>

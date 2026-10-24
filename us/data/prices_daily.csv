@@ -1,0 +1,98 @@
+date,ticker,open,close,source
+2026-10-07,AMD,634.77,645.86,stockanalysis.com
+2026-10-07,MU,1017.37,1088.00,stockanalysis.com
+2026-10-07,NASDAQ,27430.54,27538.69,investing.com
+2026-10-07,NVDA,237.69,237.47,stockanalysis.com
+2026-10-07,QQQ,753.79,757.73,stockanalysis.com
+2026-10-07,SMH,621.10,625.03,stockanalysis.com
+2026-10-07,SOX,12932.5,13066.2,investing.com
+2026-10-07,TSM,472.60,472.20,stockanalysis.com
+2026-10-07,VOO,713.06,714.34,stockanalysis.com
+2026-10-12,AMD,599.93,594.24,stockanalysis.com
+2026-10-12,MU,1002.45,989.04,stockanalysis.com
+2026-10-12,NVDA,228.73,226.32,stockanalysis.com
+2026-10-12,QQQ,749.69,746.04,stockanalysis.com
+2026-10-12,SMH,598.45,590.99,stockanalysis.com
+2026-10-12,SOX,12361.2,12236.8,investing.com
+2026-10-12,TSM,453.55,444.35,stockanalysis.com
+2026-10-12,VOO,715.81,715.13,stockanalysis.com
+2026-10-13,AMD,577.50,605.53,stockanalysis.com
+2026-10-13,MU,934.07,953.19,stockanalysis.com
+2026-10-13,NVDA,224.34,228.52,stockanalysis.com
+2026-10-13,QQQ,739.52,743.57,stockanalysis.com
+2026-10-13,SMH,578.01,588.12,stockanalysis.com
+2026-10-13,SOX,11959.5,12208.8,investing.com
+2026-10-13,TSM,439.52,445.12,stockanalysis.com
+2026-10-13,VOO,714.54,715.20,stockanalysis.com
+2026-10-14,AMD,589.57,570.82,stockanalysis.com
+2026-10-14,MU,934.56,914.13,stockanalysis.com
+2026-10-14,NASDAQ,,26692.87,derived from hdfcsky Oct 15 close minus change
+2026-10-14,NVDA,225.53,221.30,stockanalysis.com
+2026-10-14,QQQ,737.98,728.95,stockanalysis.com
+2026-10-14,SMH,576.49,564.74,stockanalysis.com
+2026-10-14,SOX,11960.0,11684.4,investing.com
+2026-10-14,TSM,436.25,430.00,stockanalysis.com
+2026-10-14,VOO,712.32,707.43,stockanalysis.com
+2026-10-15,AMD,540.00,562.23,stockanalysis.com
+2026-10-15,MU,871.58,931.24,stockanalysis.com
+2026-10-15,NASDAQ,,26713.03,hdfcsky / Zacks
+2026-10-15,NVDA,215.30,217.23,stockanalysis.com
+2026-10-15,QQQ,718.55,728.00,stockanalysis.com
+2026-10-15,SMH,545.84,558.84,stockanalysis.com
+2026-10-15,SOX,11280.9,11581.2,investing.com
+2026-10-15,TSM,415.17,422.25,stockanalysis.com
+2026-10-15,VOO,704.33,709.43,stockanalysis.com
+2026-10-16,AMD,547.55,528.75,stockanalysis.com
+2026-10-16,MU,905.49,878.84,stockanalysis.com
+2026-10-16,NASDAQ,,26140.03,Yahoo Finance live blog
+2026-10-16,NVDA,216.56,214.13,stockanalysis.com
+2026-10-16,QQQ,725.52,709.80,stockanalysis.com
+2026-10-16,SMH,551.28,539.79,stockanalysis.com
+2026-10-16,SOX,,11137.29,indexes.nasdaq.com + tradingkey.com
+2026-10-16,TSM,421.22,412.61,stockanalysis.com
+2026-10-16,VOO,710.75,701.61,stockanalysis.com
+2026-10-19,AMD,551.78,538.05,stockanalysis.com (+1.76% matches cappnotes)
+2026-10-19,MU,913.55,904.90,stockanalysis.com (+2.97% matches tradingkey)
+2026-10-19,NASDAQ,,26430.89,tradingkey.com + cappnotes
+2026-10-19,NVDA,218.10,217.09,stockanalysis.com (+1.38% matches cappnotes)
+2026-10-19,QQQ,719.61,718.36,stockanalysis.com
+2026-10-19,SMH,556.73,548.46,stockanalysis.com
+2026-10-19,SOX,,11316.34,tradingkey.com + cappnotes
+2026-10-19,TSM,421.66,420.22,stockanalysis.com
+2026-10-19,VOO,705.27,704.60,stockanalysis.com
+2026-10-20,AMD,530.02,534.74,stockanalysis.com
+2026-10-20,MU,884.13,896.07,stockanalysis.com
+2026-10-20,NASDAQ,,26424.82,cappnotes + vistapglobal
+2026-10-20,NVDA,215.98,216.47,stockanalysis.com (matches vistapglobal 216.47)
+2026-10-20,QQQ,715.25,717.63,stockanalysis.com
+2026-10-20,SMH,541.85,546.36,stockanalysis.com
+2026-10-20,SOX,11170.6,11283.81,investing.com + cappnotes
+2026-10-20,TSM,416.29,425.08,stockanalysis.com
+2026-10-20,VOO,704.01,706.80,stockanalysis.com
+2026-10-21,AMD,545.93,552.72,stockanalysis.com
+2026-10-21,MU,923.74,913.67,stockanalysis.com
+2026-10-21,NASDAQ,,26702.86,cappnotes + tradingkey
+2026-10-21,NVDA,220.96,221.97,stockanalysis.com
+2026-10-21,QQQ,722.22,725.20,stockanalysis.com
+2026-10-21,SMH,556.34,556.70,stockanalysis.com
+2026-10-21,SOX,,11505.56,cappnotes + tradingkey
+2026-10-21,TSM,433.14,431.89,stockanalysis.com
+2026-10-21,VOO,708.84,710.72,stockanalysis.com
+2026-10-22,AMD,524.10,507.93,stockanalysis.com
+2026-10-22,MU,879.66,856.49,stockanalysis.com
+2026-10-22,NASDAQ,,26008.86,cappnotes + yahoo
+2026-10-22,NVDA,217.13,212.21,stockanalysis.com
+2026-10-22,QQQ,713.61,704.47,stockanalysis.com
+2026-10-22,SMH,536.85,523.35,stockanalysis.com
+2026-10-22,SOX,,10731.98,cappnotes + yahoo(-6.7%)
+2026-10-22,TSM,419.39,412.35,stockanalysis.com
+2026-10-22,VOO,704.41,702.30,stockanalysis.com
+2026-10-23,AMD,510.21,516.79,stockanalysis.com
+2026-10-23,MU,862.29,877.55,stockanalysis.com
+2026-10-23,NASDAQ,,25955.34,tradingkey + yahoo quote bar
+2026-10-23,NVDA,210.99,210.96,stockanalysis.com
+2026-10-23,QQQ,702.20,704.40,stockanalysis.com
+2026-10-23,SMH,522.61,527.20,stockanalysis.com
+2026-10-23,SOX,,10779.46,tradingkey
+2026-10-23,TSM,412.29,418.51,stockanalysis.com
+2026-10-23,VOO,698.47,698.58,stockanalysis.com
