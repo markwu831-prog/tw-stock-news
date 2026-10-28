@@ -96,3 +96,21 @@ date,ticker,open,close,source
 2026-10-23,SOX,,10779.46,tradingkey
 2026-10-23,TSM,412.29,418.51,stockanalysis.com
 2026-10-23,VOO,698.47,698.58,stockanalysis.com
+2026-10-26,AMD,522.79,531.28,stockanalysis.com
+2026-10-26,MU,889.88,903.70,stockanalysis.com
+2026-10-26,NASDAQ,,26169.38,thestreet + 247wallst(+0.82%)
+2026-10-26,NVDA,213.11,216.00,stockanalysis.com
+2026-10-26,QQQ,707.06,712.20,stockanalysis.com
+2026-10-26,SMH,531.35,541.62,stockanalysis.com
+2026-10-26,SOX,,11083.47,cappnotes + rallies.ai(+2.8%)
+2026-10-26,TSM,418.07,424.37,stockanalysis.com
+2026-10-26,VOO,700.66,703.41,stockanalysis.com
+2026-10-27,AMD,,560.26,massive.com + cappnotes(+5.45%)
+2026-10-27,MU,,928.73,derived from cappnotes +2.77%
+2026-10-27,NASDAQ,,26477.81,tradingkey + cappnotes
+2026-10-27,NVDA,,217.94,massive.com + cappnotes(+0.90%)
+2026-10-27,QQQ,,721.25,massive.com
+2026-10-27,SMH,,557.98,massive.com
+2026-10-27,SOX,,11482.51,tradingkey + cappnotes
+2026-10-27,TSM,,436.87,massive.com
+2026-10-27,VOO,,707.52,massive.com
