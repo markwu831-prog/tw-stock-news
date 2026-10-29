@@ -114,12 +114,21 @@ date,ticker,open,close,source
 2026-10-27,SOX,,11482.51,tradingkey + cappnotes
 2026-10-27,TSM,,436.87,massive.com
 2026-10-27,VOO,,707.52,massive.com
-2026-10-28,AMD,,578.41,derived from cappnotes +3.24%
-2026-10-28,MU,,983.15,derived from cappnotes +5.86%
+2026-10-28,AMD,573.08,578.44,stockanalysis.com + cappnotes(+3.24%)
+2026-10-28,MU,961.71,983.23,stockanalysis.com + cappnotes(+5.86%)
 2026-10-28,NASDAQ,,26549.85,cappnotes(+0.27%)
-2026-10-28,NVDA,,215.38,heygotrade + cappnotes(-1.17%)
-2026-10-28,QQQ,,725.61,Yahoo at close (+4.36 vs 721.25)
-2026-10-28,SMH,,564.49,investing.com history via WebSearch (+1.17% vs 557.98)
+2026-10-28,NVDA,219.92,215.38,stockanalysis.com + cappnotes(-1.17%)
+2026-10-28,QQQ,724.12,725.61,stockanalysis.com + Yahoo
+2026-10-28,SMH,564.32,567.67,stockanalysis.com (corrected; earlier search value 564.49 was wrong)
 2026-10-28,SOX,,11684.00,cappnotes(+1.75%)
 2026-10-28,TSM,438.24,439.51,heygotrade + stockanalysis/CNBC via WebSearch (+0.60%)
-2026-10-28,VOO,,709.90,Yahoo at close + investing.com (+2.38)
+2026-10-28,VOO,709.15,709.90,stockanalysis.com + Yahoo
+2026-10-29,AMD,562.27,566.42,stockanalysis.com
+2026-10-29,MU,967.94,934.27,stockanalysis.com + cappnotes(-4.98%)
+2026-10-29,NASDAQ,,26184.72,cappnotes(-1.38%)
+2026-10-29,NVDA,214.36,213.66,stockanalysis.com
+2026-10-29,QQQ,716.54,715.34,stockanalysis.com
+2026-10-29,SMH,558.93,561.67,stockanalysis.com
+2026-10-29,SOX,,11518.20,cappnotes(-1.42%)
+2026-10-29,TSM,431.69,431.81,stockanalysis.com
+2026-10-29,VOO,706.66,707.32,stockanalysis.com
