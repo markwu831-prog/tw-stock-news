@@ -132,3 +132,12 @@ date,ticker,open,close,source
 2026-10-29,SOX,,11518.20,cappnotes(-1.42%)
 2026-10-29,TSM,431.69,431.81,stockanalysis.com
 2026-10-29,VOO,706.66,707.32,stockanalysis.com
+2026-10-30,AMD,508.53,504.80,stockanalysis.com + techflowpost(-10.88%)
+2026-10-30,MU,884.00,884.74,stockanalysis.com + techflowpost(-5.30%)
+2026-10-30,NASDAQ,,25437.00,news close (-2.85%) consistent with prev close
+2026-10-30,NVDA,208.94,204.64,stockanalysis.com + techflowpost(-4.22%)
+2026-10-30,QQQ,697.21,690.49,stockanalysis.com
+2026-10-30,SMH,532.58,522.49,stockanalysis.com
+2026-10-30,SOX,,10688.89,derived from -7.2% (NBC/techflowpost); exact level not found
+2026-10-30,TSM,414.08,406.13,stockanalysis.com
+2026-10-30,VOO,699.92,694.81,stockanalysis.com
