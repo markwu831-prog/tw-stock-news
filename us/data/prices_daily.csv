@@ -141,3 +141,12 @@ date,ticker,open,close,source
 2026-10-30,SOX,,10688.89,derived from -7.2% (NBC/techflowpost); exact level not found
 2026-10-30,TSM,414.08,406.13,stockanalysis.com
 2026-10-30,VOO,699.92,694.81,stockanalysis.com
+2026-11-02,AMD,510.71,466.84,stockanalysis.com
+2026-11-02,MU,890.54,833.59,stockanalysis.com + tradingkey(-5.7%)
+2026-11-02,NASDAQ,,25164.32,tradingkey(-1.07%)
+2026-11-02,NVDA,207.53,202.06,stockanalysis.com
+2026-11-02,QQQ,695.32,681.20,stockanalysis.com
+2026-11-02,SMH,529.05,508.31,stockanalysis.com
+2026-11-02,SOX,,10328.33,tradingkey(-3.37%)
+2026-11-02,TSM,412.52,398.63,stockanalysis.com
+2026-11-02,VOO,698.10,691.32,stockanalysis.com
