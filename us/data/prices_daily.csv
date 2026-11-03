@@ -145,8 +145,17 @@ date,ticker,open,close,source
 2026-11-02,MU,890.54,833.59,stockanalysis.com + tradingkey(-5.7%)
 2026-11-02,NASDAQ,,25164.32,tradingkey(-1.07%)
 2026-11-02,NVDA,207.53,202.06,stockanalysis.com
-2026-11-02,QQQ,695.32,681.20,stockanalysis.com
+2026-11-02,QQQ,695.32,681.09,stockanalysis.com (revised from 681.20)
 2026-11-02,SMH,529.05,508.31,stockanalysis.com
 2026-11-02,SOX,,10328.33,tradingkey(-3.37%)
 2026-11-02,TSM,412.52,398.63,stockanalysis.com
 2026-11-02,VOO,698.10,691.32,stockanalysis.com
+2026-11-03,AMD,479.99,483.90,stockanalysis.com + fxleaders(+3.7%)
+2026-11-03,MU,859.93,855.10,stockanalysis.com
+2026-11-03,NASDAQ,,25317.00,hdfcsky(+0.61%); biggo says 25372.01(+0.83%) - conflict
+2026-11-03,NVDA,207.96,206.69,stockanalysis.com + yournews(~+2.3%)
+2026-11-03,QQQ,684.39,685.28,stockanalysis.com
+2026-11-03,SMH,520.68,518.52,stockanalysis.com
+2026-11-03,SOX,,10600.40,tradingkey close(+2.63%)
+2026-11-03,TSM,404.99,404.80,stockanalysis.com
+2026-11-03,VOO,691.88,693.54,stockanalysis.com
