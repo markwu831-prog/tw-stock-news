@@ -69,3 +69,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-04,2026-11-04,8,2026-11-03 13:50,聯發科跌 7.43%、台達電跌 6.27%、國巨跌 9.13%,AI 相關個股跌幅擴大，台積電跌 1.5% 相對抗跌,台股盤後,2454;2308;2327,neutral,https://finance.ettoday.net/news/3265547
 2026-11-04,2026-11-04,9,2026-11-03 14:30,面板雙虎補跌：友達跌 6.34%、群創跌 7.52%,大盤崩跌時，非 AI 族群也遭賣壓,台股盤後,2409;3481,neutral,https://histock.tw/stock/2409
 2026-11-04,2026-11-04,10,2026-11-04 05:00,Fed 官員稱利率可能需要上調，美 10 年期殖利率回升至約 4.95%,CME FedWatch 顯示 12 月升息機率約 75%,總經,0050,down,https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-earnings-141143244.html
+2026-11-05,2026-11-05,1,2026-11-05,民主黨期中選舉橫掃參眾兩院，道瓊大漲逾 1400 點,分治政府預期提振風險偏好；盤中道瓊漲約 2.9%，標普、那指漲約 1.7%–1.8%（盤中數據）,政治／美股,0050;2317,up,https://ca.finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html
+2026-11-05,2026-11-05,2,2026-11-04 22:40,AI 建設股承壓：市場擔心民主黨收緊資料中心法規,德州州長當選人承諾暫停資料中心興建；CoreWeave、特斯拉早盤跌逾 5%,AI 資本支出,2308;2327;2330,down,https://news.cnyes.com/news/id/6646809
+2026-11-05,2026-11-05,3,2026-11-05,輝達 11/4 收跌 3.12%，美光盤中跌逾 5%,晶片股在大盤大漲中逆勢走弱,半導體,2330;2454,down,https://www.tradingkey.com/news/market-movers/262275898-market-movers-nvda-20261104
+2026-11-05,2026-11-05,4,2026-11-04 22:40,費半盤中跌約 1.1%，台積電 ADR 盤中跌 0.77%,晶片 ETF 較 6 月高點跌約 28%（收盤數字未取得）,ADR,2330;0050,down,https://news.cnyes.com/news/id/6646809
+2026-11-05,2026-11-05,5,2026-11-05,蘋果盤中大漲約 6% 創新高，市值站上 5 兆美元,微軟也漲約 6% 創新高,美股,2317,up,https://ca.finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html
+2026-11-05,2026-11-05,6,2026-11-04,AMD 財報：資料中心營收年增 97%，Q4 營收成長加速,自由現金流低於預期；盤後一度漲約 7%，11/4 開盤走弱,財報,2330;2454,neutral,https://www.tradingkey.com/news/market-movers/262275898-market-movers-nvda-20261104
+2026-11-05,2026-11-05,7,2026-11-04 22:40,川普稱無立即攻擊伊朗計畫，原油跌約 3%,布蘭特降至約 100 美元；美元指數創 9 月來最大跌幅,總經,0050;2409;3481,up,https://news.cnyes.com/news/id/6646809
+2026-11-05,2026-11-05,8,2026-11-04 14:11,台股 11/4 震盪 1885 點收 42949 點，留長下影線,午後買盤進場；聯發科、日月光翻紅，塑化股漲 1.63%,台股盤後,0050;2454;2330,neutral,https://www.cna.com.tw/news/afe/202611040157.aspx
+2026-11-05,2026-11-05,9,2026-11-04 14:11,分析師：指數跌破長期上升趨勢線，融資斷頭壓力仍在,兆豐投顧黃國偉稱融資餘額仍高,台股盤後,0050,down,https://www.cna.com.tw/news/afe/202611040157.aspx
+2026-11-05,2026-11-05,10,2026-11-04 13:30,聯電 11/4 逆勢漲 2.4%、友達漲 1%，台達電續跌 3.9%,非 AI 成熟製程與面板相對抗跌，AI 電源股續弱,台股盤後,2303;2409;2308,neutral,https://www.nstock.tw/2303
