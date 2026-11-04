@@ -152,10 +152,19 @@ date,ticker,open,close,source
 2026-11-02,VOO,698.10,691.32,stockanalysis.com
 2026-11-03,AMD,479.99,483.90,stockanalysis.com + fxleaders(+3.7%)
 2026-11-03,MU,859.93,855.10,stockanalysis.com
-2026-11-03,NASDAQ,,25317.00,hdfcsky(+0.61%); biggo says 25372.01(+0.83%) - conflict
+2026-11-03,NASDAQ,,25372.01,biggo; confirmed by cappnotes 11/4 (+1.44% to 25736.51 implies 25371)
 2026-11-03,NVDA,207.96,206.69,stockanalysis.com + yournews(~+2.3%)
 2026-11-03,QQQ,684.39,685.28,stockanalysis.com
 2026-11-03,SMH,520.68,518.52,stockanalysis.com
 2026-11-03,SOX,,10600.40,tradingkey close(+2.63%)
 2026-11-03,TSM,404.99,404.80,stockanalysis.com
 2026-11-03,VOO,691.88,693.54,stockanalysis.com
+2026-11-04,AMD,485.25,488.82,stockanalysis.com
+2026-11-04,MU,823.00,795.30,stockanalysis.com + cappnotes(-7.00%)
+2026-11-04,NASDAQ,,25736.51,cappnotes Closing Look (+1.44%)
+2026-11-04,NVDA,203.50,200.24,stockanalysis.com + cappnotes(-3.17%)
+2026-11-04,QQQ,688.43,691.85,stockanalysis.com
+2026-11-04,SMH,511.17,504.30,stockanalysis.com
+2026-11-04,SOX,,10268.61,derived from cappnotes -3.13% x prev 10600.40
+2026-11-04,TSM,401.00,395.61,stockanalysis.com
+2026-11-04,VOO,701.33,704.74,stockanalysis.com
