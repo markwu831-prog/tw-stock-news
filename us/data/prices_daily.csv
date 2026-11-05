@@ -159,12 +159,21 @@ date,ticker,open,close,source
 2026-11-03,SOX,,10600.40,tradingkey close(+2.63%)
 2026-11-03,TSM,404.99,404.80,stockanalysis.com
 2026-11-03,VOO,691.88,693.54,stockanalysis.com
-2026-11-04,AMD,485.25,488.82,stockanalysis.com
-2026-11-04,MU,823.00,795.30,stockanalysis.com + cappnotes(-7.00%)
+2026-11-04,AMD,485.25,488.78,stockanalysis.com revised; massive prev close
+2026-11-04,MU,823.00,795.23,stockanalysis.com revised; massive prev close
 2026-11-04,NASDAQ,,25736.51,cappnotes Closing Look (+1.44%)
-2026-11-04,NVDA,203.50,200.24,stockanalysis.com + cappnotes(-3.17%)
-2026-11-04,QQQ,688.43,691.85,stockanalysis.com
-2026-11-04,SMH,511.17,504.30,stockanalysis.com
-2026-11-04,SOX,,10268.61,derived from cappnotes -3.13% x prev 10600.40
-2026-11-04,TSM,401.00,395.61,stockanalysis.com
-2026-11-04,VOO,701.33,704.74,stockanalysis.com
+2026-11-04,NVDA,203.50,200.13,stockanalysis.com revised; massive prev close
+2026-11-04,QQQ,688.43,691.95,stockanalysis.com revised; massive prev close
+2026-11-04,SMH,511.17,504.27,stockanalysis.com revised; massive prev close
+2026-11-04,SOX,,10268.66,biggo close (-3.13%)
+2026-11-04,TSM,400.64,395.75,stockanalysis.com revised; massive prev close
+2026-11-04,VOO,701.33,704.78,stockanalysis.com revised; massive prev close
+2026-11-05,AMD,452.50,404.40,massive.com close; cappnotes -17.26%
+2026-11-05,MU,752.69,656.39,massive.com close; cappnotes -17.46%
+2026-11-05,NASDAQ,,24315.00,cappnotes Closing Look (-5.52%)
+2026-11-05,NVDA,196.07,181.60,massive.com close; cappnotes -9.26%
+2026-11-05,QQQ,683.12,647.05,massive.com close; cappnotes NDX -6.36%
+2026-11-05,SMH,482.14,447.73,massive.com close; cappnotes -11.21%
+2026-11-05,SOX,,9011.14,leprivatebanker (-12.25% / -1257.52 pts)
+2026-11-05,TSM,379.75,353.10,massive.com close
+2026-11-05,VOO,703.70,673.97,massive.com close
