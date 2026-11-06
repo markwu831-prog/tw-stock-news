@@ -177,3 +177,12 @@ date,ticker,open,close,source
 2026-11-05,SOX,,9011.14,leprivatebanker (-12.25% / -1257.52 pts)
 2026-11-05,TSM,379.75,353.10,massive.com close
 2026-11-05,VOO,703.70,673.97,massive.com close
+2026-11-06,AMD,444.43,449.03,stockanalysis.com (massive stale)
+2026-11-06,MU,,690.00,massive.com close
+2026-11-06,NASDAQ,,24579.42,close report (+1.09%; checks vs prev)
+2026-11-06,NVDA,191.10,186.64,massive.com close; stockanalysis 186.71
+2026-11-06,QQQ,,656.10,massive.com close
+2026-11-06,SMH,472.92,463.96,massive.com close; stockanalysis 464.30
+2026-11-06,SOX,,9390.25,yournews/close report (+4.21%; checks vs prev)
+2026-11-06,TSM,,375.44,massive.com close; biggo ~+8% intraday
+2026-11-06,VOO,,675.99,massive.com close
