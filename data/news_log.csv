@@ -99,3 +99,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-09,2026-11-09,8,2026-11-06 18:04,外資 11 月以來賣超 5244 億元，10 月賣超 9943 億元,融資餘額單日大減逾 400 億元，籌碼面清洗,籌碼,0050;2330,neutral,https://news.cnyes.com/news/id/6650445
 2026-11-09,2026-11-09,9,2026-11-06,外資 11/6 買超友達 1.9 萬張、群創 2.1 萬張,面板股獲外資逆勢承接,籌碼,2409;3481,up,https://histock.tw/stock/2409
 2026-11-09,2026-11-09,10,2026-11-06 15:08,台達電跌 6.6%、國巨跌 7.5%、聯電跌 6.5%，跌幅居前,AI 資料中心相關股跌勢最重,台股盤後,2308;2327;2303,neutral,https://www.cna.com.tw/news/afe/202611060172.aspx
+2026-11-10,2026-11-10,1,2026-11-10 05:01,美股 11/9 收盤：那指漲 2.74%、標普漲 2.34%、道瓊漲 1106 點,科技股全面反彈，油價下跌助攻,美股收盤,0050;2330;2317,up,https://www.tipranks.com/news/u-s-market-rallies-into-the-close-as-oil-prices-fall-and-tech-stocks-rebound
+2026-11-10,2026-11-10,2,2026-11-10 05:01,半導體 ETF（SOXX）大漲 7%，AMD、博通各漲逾 10%,前一週 SOXX 跌 13% 後強彈,半導體,2330;2454;2303,up,https://www.tipranks.com/news/u-s-market-rallies-into-the-close-as-oil-prices-fall-and-tech-stocks-rebound
+2026-11-10,2026-11-10,3,2026-11-10 00:18,台積電 ADR 盤中大漲 5%，報 394 美元,11/6 收 375.56 美元（盤中數據，收盤未取得）,ADR,2330;0050,up,https://news.cnyes.com/news/id/6654793
+2026-11-10,2026-11-10,4,2026-11-10 05:01,輝達董事會調查黃仁勳與涉嫌中國間諜女子關係，股價跌約 5%,董事會稱無理由相信公司機密或國安受損，仍信任黃仁勳；指控尚未證實,半導體,2330;2317;2308,down,https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026
+2026-11-10,2026-11-10,5,2026-11-10 05:01,川普稱不太可能重啟對伊朗大規模攻擊，原油跌 4%–6%,WTI 約 86 美元、布蘭特約 92 美元,總經,0050;2409;3481,up,https://www.tipranks.com/news/u-s-market-rallies-into-the-close-as-oil-prices-fall-and-tech-stocks-rebound
+2026-11-10,2026-11-10,6,2026-11-09 22:39,Alphabet 推出新款 AI 晶片,ASIC 族群受惠,半導體,2454,up,https://news.cnyes.com/news/id/6653692
+2026-11-10,2026-11-10,7,2026-11-10,美國 10 月 CPI 今晚公布，輝達 11/17 公布財報,市場預估年底前升息機率約 8 成,總經,0050,neutral,https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026
+2026-11-10,2026-11-10,8,2026-11-09 14:57,台股 11/9 大漲 1960 點收 41662 點，聯發科、台達電、國巨、群創漲停,國安基金護盤加上費半反彈；外資仍賣超 900 億元,台股盤後,0050;2454;2308;2327;3481,neutral,https://www.cna.com.tw/news/afe/202611090124.aspx
+2026-11-10,2026-11-10,9,2026-11-10,台積電今日公布 10 月營收,市場關注 AI 需求是否受資料中心監管疑慮影響,個股,2330,neutral,https://www.cna.com.tw/news/afe/202611090124.aspx
+2026-11-10,2026-11-10,10,2026-11-09 14:57,投信買超 267 億元，外資賣超 900 億元,內資接手，外資動向仍是反彈延續的關鍵,籌碼,0050,neutral,https://www.cna.com.tw/news/afe/202611090124.aspx
