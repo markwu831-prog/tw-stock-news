@@ -195,3 +195,12 @@ date,ticker,open,close,source
 2026-11-09,SOX,,10033.88,tradingkey close (+6.85%; checks vs prev)
 2026-11-09,TSM,,388.62,massive.com close
 2026-11-09,VOO,,691.87,massive.com close; S&P +2.35%
+2026-11-10,AMD,502.80,515.21,massive.com close; stockanalysis 515.30
+2026-11-10,MU,,725.11,massive.com close
+2026-11-10,NASDAQ,,25065.88,cappnotes Closing Look (-0.74%)
+2026-11-10,NVDA,173.97,168.89,massive.com close; cappnotes -5.47%
+2026-11-10,QQQ,,674.76,massive.com close; cappnotes NDX -0.60%
+2026-11-10,SMH,478.19,483.63,massive.com close; stockanalysis 483.75
+2026-11-10,SOX,,9993.74,derived from Yahoo ~-0.4% x prev 10033.88 (approx; one Taiwan report said +1.3%)
+2026-11-10,TSM,388.42,396.48,massive.com close; stockanalysis 396.24
+2026-11-10,VOO,,689.50,massive.com close; cappnotes S&P -0.38%
