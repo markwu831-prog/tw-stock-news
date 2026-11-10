@@ -159,3 +159,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-09,2026-11-09,8,2026-11-09,費半自 10/6 高點已跌約 30%,新當選官員呼籲暫停興建資料中心的疑慮仍在,產業,SOX;SMH,down,https://www.upi.com/Top_News/World-News/2026/11/09/korea-KOSPI-Korea-Stock-Index-close-lower-AI-uncertainty/5191794215383
 2026-11-09,2026-11-09,9,2026-11-17,輝達 11/17 公布財報,下一個晶片股重大事件,財報,NVDA;SMH;SOX,neutral,https://lufkindailynews.com/news_reuters/business/nvidias-out-of-hour-shares-fall-as-firm-probes-ceo-jensen-huang/article_7723145e-1379-5bfd-a2a1-807679422c55.html
 2026-11-09,2026-11-09,10,2026-11-06,台灣國安基金授權進場，台股自高點跌逾 20%,金管會提高融券保證金成數抑制空方,政策,TSM,up,https://news.cnyes.com/news/id/6650445
+2026-11-10,2026-11-10,1,2026-11-10 台灣下午,台積電 10 月營收 5868.9 億元創單月新高，年增 59.7%、月增 14.7%,高於分析師預估 5600～5700 億元；已達第四季財測約三分之一,財報,TSM;SMH;SOX;NVDA,up,https://www.tipranks.com/news/tsmcs-october-revenue-jumps-60-on-ai-demand-shares-rise
+2026-11-10,2026-11-10,2,2026-11-10 08:30 ET,今晚公布 10 月 CPI，預期月增 0.2%～0.3%、核心 0.2%,9 月為 0.6%；因政府關門無年增率；是 12 月會議前最後一份 CPI，核心 0.3% 以上將強化升息預期,總經,VOO;QQQ;NASDAQ;SOX,neutral,https://www.morningstar.com/economy/october-cpi-forecasts-show-inflation-softening-december-rate-hike-still-looks-likely
+2026-11-10,2026-11-10,3,2026-11-10 韓股收盤,KOSPI 大漲 4.39% 至 5239.13 觸發買進側車，SK 海力士 +6.69%、三星 +4.74%,外資八個交易日來首度轉為買超,亞洲盤,MU;SMH;SOX,up,https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns
+2026-11-10,2026-11-10,4,2026-11-10 台股收盤,台積電 +2.2% 至 2285 元，台達電漲停、聯發科 +2.8%,0050 +2.3%；連兩日反彈,亞洲盤,TSM,up,https://www.cna.com.tw/news/afe/202611090124.aspx
+2026-11-10,2026-11-10,5,2026-11-09 收盤,費半大漲 6.85% 重回 10033.88，29／30 成分股上漲；那指 +2.74%、標普 +2.35%,油價下跌助攻；AMD +13.26%,美股收盤,SOX;SMH;QQQ;VOO,up,https://www.tradingkey.com/analysis/stocks/us-stocks/262297090-us-stock-nasdaq-dow-rise-anthropic-ipo-nvidia-spacex-tesla-tradingkey
+2026-11-10,2026-11-10,6,2026-11-09,輝達董事會稱無理由相信公司機密或國安受損，仍信任黃仁勳,輝達 11/9 跌 4.27%；指控尚未證實,公司治理,NVDA,neutral,https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026
+2026-11-10,2026-11-10,7,2026-11-09,AMD 獲 Oppenheimer 調升至優於大盤，EPYC 處理器用於 Google Cloud TPU 8tx,目標價 600 美元,評等,AMD,up,https://www.fool.com/coverage/stock-market-today/2026/11/09/stock-market-today-nov-9-amd-jumps-on-oppenheimer-upgrade-and-google-cloud-chip-selection/
+2026-11-10,2026-11-10,8,2026-11-09,川普稱不太可能重啟對伊朗大規模攻擊，原油跌 4%～6%,WTI 約 86 美元,地緣政治,VOO,up,https://www.tipranks.com/news/u-s-market-rallies-into-the-close-as-oil-prices-fall-and-tech-stocks-rebound
+2026-11-10,2026-11-10,9,2026-11-09,Alphabet 推出新款 AI 晶片,ASIC 族群受惠,產業,SOX;AMD,up,https://news.cnyes.com/news/id/6653692
+2026-11-10,2026-11-10,10,2026-11-17,輝達 11/17 公布財報,市場預估年底前升息機率約 8 成,財報,NVDA,neutral,https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026
