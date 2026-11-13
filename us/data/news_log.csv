@@ -189,3 +189,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-12,2026-11-12,8,2026-11-12 美東盤後,應用材料今天盤後公布財報,市場預估 EPS 約 4.06～4.14 美元、營收約 103～105 億美元；收盤後才公布，不影響今天收盤,半導體,SMH;SOX,neutral,https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-report-fourth-quarter-and-fiscal-2026-results
 2026-11-12,2026-11-12,9,2026-11-13 08:30 ET,10 月 PPI 週五公布，預估月增 0.4%、核心 0.3%,是 12 月 9 日利率決策前最後一份通膨數據,總經,VOO;QQQ,neutral,https://www.stocktitan.net/articles/october-2026-ppi-preview-yearly-rate
 2026-11-12,2026-11-12,10,2026-11-11,Anthropic IPO 定價訂 11/18，11/19 以 ANT 在那斯達克掛牌,市場預期散戶買盤可能創紀錄,IPO,QQQ;NASDAQ,neutral,https://cappnotes.substack.com/p/closing-look-wednesday-november-11
+2026-11-13,2026-11-13,1,2026-11-12,黃仁勳辭去輝達執行長，財務長柯蕾絲暫代,至少六家券商調降至持有，輝達 11/17 在沒有正式執行長下公布財報；又傳出第三段婚外情指控,AI／半導體,NVDA;SMH;SOX,down,https://finance.yahoo.com/technology/article/nvidia-cfo-solid-pick-for-interim-ceo-but-company-outlook-is-clouded-wall-street-says-181415153.html
+2026-11-13,2026-11-13,2,2026-11-12 美東盤後,應用材料第四季營收 104.1 億美元年增 53%，EPS 4.16 美元優於預期,全年營收創新高 344 億美元；正常盤 −3.58% 收 380.95 美元,半導體,SMH;SOX,up,https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026
+2026-11-13,2026-11-13,3,2026-11-13 台股收盤,台股漲 1.35%，聯發科大漲 7%，台積電 +0.4% 至 2350 元,中央社稱黃仁勳去職「利空出盡」；ASIC 供應鏈相對受惠,亞洲,TSM;AMD;SMH,up,https://www.cna.com.tw/news/afe/202611130135.aspx
+2026-11-13,2026-11-13,4,2026-11-13 韓股收盤,KOSPI 開高走低收跌 0.98%，SK 海力士 −3.03%、三星 −0.96%,早盤一度大漲逾 3% 後外資轉賣；輝達執行長去職、對中出口管制與油價升溫,亞洲,MU;SMH,down,https://en.bloomingbit.io/feed/news/124355
+2026-11-13,2026-11-13,5,2026-11-13 08:30 ET,今晚公布 10 月 PPI，預估月增 0.4%、核心 0.3%,12 月 9 日利率決策前最後一份通膨數據；CPI 已高於預期,總經,VOO;QQQ,neutral,https://www.stocktitan.net/articles/october-2026-ppi-preview-yearly-rate
+2026-11-13,2026-11-13,6,2026-11-12,2 年期殖利率大漲 15 基點至 4.88%，10 年期回到 5.10%,克里夫蘭聯準會總裁哈瑪克主張小幅多次升息；期貨完全反映 12 月升息,利率,VOO;QQQ,down,https://cappnotes.substack.com/p/closing-look-thursday-november-12
+2026-11-13,2026-11-13,7,2026-11-12,AMD 獲 William Blair 調升，與博通各漲逾 5%,市場押注輝達領導真空期間兩家搶市占,AI／半導體,AMD,up,https://cappnotes.substack.com/p/closing-look-thursday-november-12
+2026-11-13,2026-11-13,8,2026-11-12,葉門青年運動攻擊沙烏地石油設施，荷莫茲海峽油輪爆炸,油價大漲；川普稱不需要與伊朗達成協議,地緣政治,VOO,down,https://cappnotes.substack.com/p/closing-look-thursday-november-12
+2026-11-13,2026-11-13,9,2026-11-12 美東盤後,思科營收 185 億美元創新高，上調財測,正常盤 +1.24%，盤後約 +3%,大型科技,QQQ,up,https://cappnotes.substack.com/p/closing-look-thursday-november-12
+2026-11-13,2026-11-13,10,2026-11-12,新雲端股再跌：Nebius −16.8%、CoreWeave −6.9%,Nebius 資本支出上調至 270 億美元、營收指引落在區間低端,AI,NVDA;SMH,down,https://cappnotes.substack.com/p/closing-look-thursday-november-12
