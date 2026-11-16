@@ -199,3 +199,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-13,2026-11-13,8,2026-11-12,葉門青年運動攻擊沙烏地石油設施，荷莫茲海峽油輪爆炸,油價大漲；川普稱不需要與伊朗達成協議,地緣政治,VOO,down,https://cappnotes.substack.com/p/closing-look-thursday-november-12
 2026-11-13,2026-11-13,9,2026-11-12 美東盤後,思科營收 185 億美元創新高，上調財測,正常盤 +1.24%，盤後約 +3%,大型科技,QQQ,up,https://cappnotes.substack.com/p/closing-look-thursday-november-12
 2026-11-13,2026-11-13,10,2026-11-12,新雲端股再跌：Nebius −16.8%、CoreWeave −6.9%,Nebius 資本支出上調至 270 億美元、營收指引落在區間低端,AI,NVDA;SMH,down,https://cappnotes.substack.com/p/closing-look-thursday-november-12
+2026-11-16,2026-11-16,1,2026-11-16 台股收盤,台股重挫 6.03% 收 41040 點，史上第二大跌點；台積電 −5.7% 至 2215 元,收在最低點、逾百檔跌停；外資賣超 701.89 億元，台達電跌停,亞洲,TSM;SMH;SOX,down,https://www.cna.com.tw/news/afe/202611160147.aspx
+2026-11-16,2026-11-16,2,2026-11-16 韓股收盤,KOSPI 跌 3.59% 至 5100.50，SK 海力士 −7.89%、三星 −4.47%,連三天下跌；外資賣超 1.38 兆韓元，輝達財報前不確定性升高,亞洲,MU;SMH,down,https://www.digitaltoday.co.kr/en/view/126330/kospi-falls-3-59-percent-to-5100-on-foreign-selling
+2026-11-16,2026-11-16,3,2026-11-16 日股收盤,日經跌 2.42% 跌破 6 萬點，愛德萬 −11.1%、東京威力 −7.1%,兩檔晶片設備股貢獻 1072 點跌幅,亞洲,SMH;SOX,down,https://news.jkn.co.kr/editions/english/post/1099373
+2026-11-16,2026-11-16,4,2026-11-15,FT：黃仁勳與盟友討論重返輝達執行長,盟友成立「作戰室」遊說董事會與白宮；黃仁勳並無控制性持股,AI／半導體,NVDA,neutral,https://www.forbes.com/sites/zacharyfolk/2026/11/15/jensen-huang-is-already-considering-returning-to-nvidia-report-says/
+2026-11-16,2026-11-16,5,2026-11-15,美財長貝森特要求輝達找外部執行長，並限 10 天回覆出口合規問題,質疑輝達是否忽視 AI 晶片流入中國的跡象；呼籲領導層大幅改組,政策,NVDA;SMH,down,https://investinglive.com/stocks/weekend-bessent-urges-nvidia-to-hire-an-outsider-ceo-pouring-cold-water-on-a-huang-comeback/
+2026-11-16,2026-11-16,6,2026-11-13 收盤,費半週五重挫 3.43%，AMD −8.75%，輝達單週跌 13%,輝達創 2025 年 4 月以來最大單週跌幅，市值蒸發 5730 億美元,美股,SMH;SOX;NVDA;AMD,down,https://ec.ltn.com.tw/article/breakingnews/5640755
+2026-11-16,2026-11-16,7,2026-11-17 美東盤後,輝達 11/17 盤後公布財報，由臨時執行長柯蕾絲主持,黃仁勳去職後首場財報；今天收盤前市場觀望,AI／半導體,NVDA;SMH;SOX,neutral,https://ec.ltn.com.tw/article/breakingnews/5640965
+2026-11-16,2026-11-16,8,2026-11-16,法人：「黃仁勳溢價」消退，台灣輝達供應鏈承壓,輝達 2026 年向台灣採購約 423 億美元,AI 供應鏈,TSM;NVDA,down,https://www.cmoney.tw/forum/stock/2409
+2026-11-16,2026-11-16,9,2026-11-18,Anthropic IPO 本週三定價、週四掛牌,市場預期散戶買盤可能創紀錄,IPO,QQQ;NASDAQ,neutral,https://rallies.ai/news/japans-nikkei-tumbles-under-weight-of-tech-shares-in-big-week-for-ai-b2d8551f401701d2
+2026-11-16,2026-11-16,10,2026-11-13,10 月 PPI 低於預期,股市開高後因輝達醜聞翻黑；期貨仍完全反映 12 月升息,總經,VOO;QQQ,up,https://kucoin.com/zh-hant/news/flash/amd-drops-10-5-as-chip-rally-unwinds-nasdaq-100-falls-1-7
