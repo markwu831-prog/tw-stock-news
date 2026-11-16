@@ -231,3 +231,12 @@ date,ticker,open,close,source
 2026-11-13,SOX,,10146.32,FX168 (-3.43%)
 2026-11-13,TSM,,398.73,massive.com close
 2026-11-13,VOO,698.66,693.38,stockanalysis.com (massive stale)
+2026-11-16,AMD,,504.28,massive.com close
+2026-11-16,MU,,719.02,massive.com close
+2026-11-16,NASDAQ,,24509.76,LTN (-626.51 pts)
+2026-11-16,NVDA,159.02,156.14,massive.com close; LTN -4.12%
+2026-11-16,QQQ,671.04,661.75,massive.com + stockanalysis 661.56
+2026-11-16,SMH,,461.90,massive.com close (stockanalysis 465.20 not final)
+2026-11-16,SOX,,9611.07,derived: LTN -5.28% x prev
+2026-11-16,TSM,,373.45,massive.com close; LTN -6.34%
+2026-11-16,VOO,,680.26,massive.com close; S&P -1.9%
