@@ -237,6 +237,15 @@ date,ticker,open,close,source
 2026-11-16,NVDA,159.02,156.14,massive.com close; LTN -4.12%
 2026-11-16,QQQ,671.04,661.75,massive.com + stockanalysis 661.56
 2026-11-16,SMH,,461.90,massive.com close (stockanalysis 465.20 not final)
-2026-11-16,SOX,,9611.07,derived: LTN -5.28% x prev
+2026-11-16,SOX,,9610.65,LTN 5644357 (replaces derived 9611.07)
 2026-11-16,TSM,,373.45,massive.com close; LTN -6.34%
 2026-11-16,VOO,,680.26,massive.com close; S&P -1.9%
+2026-11-17,AMD,,503.41,massive.com close
+2026-11-17,MU,,712.42,massive.com close
+2026-11-17,NASDAQ,,24328.38,cappnotes Closing Look (-0.74%)
+2026-11-17,NVDA,,155.46,massive.com close; cappnotes -0.44%
+2026-11-17,QQQ,,656.95,massive.com close; cappnotes NDX -0.72%
+2026-11-17,SMH,,460.10,massive.com close (stockanalysis 457.77)
+2026-11-17,SOX,,9642.88,LTN 5644357 (+0.34%)
+2026-11-17,TSM,372.18,359.69,massive.com + stockanalysis.com; LTN -3.68%
+2026-11-17,VOO,678.82,673.19,massive.com + stockanalysis.com
