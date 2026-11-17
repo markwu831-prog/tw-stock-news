@@ -209,3 +209,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-16,2026-11-16,8,2026-11-16,法人：「黃仁勳溢價」消退，台灣輝達供應鏈承壓,輝達 2026 年向台灣採購約 423 億美元,AI 供應鏈,TSM;NVDA,down,https://www.cmoney.tw/forum/stock/2409
 2026-11-16,2026-11-16,9,2026-11-18,Anthropic IPO 本週三定價、週四掛牌,市場預期散戶買盤可能創紀錄,IPO,QQQ;NASDAQ,neutral,https://rallies.ai/news/japans-nikkei-tumbles-under-weight-of-tech-shares-in-big-week-for-ai-b2d8551f401701d2
 2026-11-16,2026-11-16,10,2026-11-13,10 月 PPI 低於預期,股市開高後因輝達醜聞翻黑；期貨仍完全反映 12 月升息,總經,VOO;QQQ,up,https://kucoin.com/zh-hant/news/flash/amd-drops-10-5-as-chip-rally-unwinds-nasdaq-100-falls-1-7
+2026-11-17,2026-11-17,1,2026-11-17 美東盤後,輝達今天盤後公布財報，臨時執行長柯蕾絲首次主持,市場預估營收約 1088～1091 億美元、EPS 約 2.47 美元；收盤後才公布，不影響今天收盤,AI／半導體,NVDA;SMH;SOX,neutral,https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html
+2026-11-17,2026-11-17,2,2026-11-16 收盤,美股黑色星期一：費半 −5.28%，那斯達克 −2.5% 進入修正,台積電 ADR −6.34%、美光 −7.62%、輝達 −4.12%；道瓊 −739 點,美股,SMH;SOX;QQQ;NASDAQ,down,https://ec.ltn.com.tw/article/breakingnews/5643083
+2026-11-17,2026-11-17,3,2026-11-17 韓股收盤,KOSPI 跌 2.59% 至 4968.48，九個月來首度跌破 5000 點,三星 −3.3%、SK 海力士 −1.96%；外資賣超 1.44 兆韓元,亞洲,MU;SMH,down,https://www.khan.co.kr/en/article/202611171646007/
+2026-11-17,2026-11-17,4,2026-11-17 台股收盤,台股跌 2.31% 收 40092 點，台積電 −2.0% 至 2170 元,盤中一度跌 1253 點後反彈 1747 點再拉回；聯發科、鴻海逆勢撐盤,亞洲,TSM;SMH,down,https://www.cna.com.tw/news/afe/202611170131.aspx
+2026-11-17,2026-11-17,5,2026-11-16,證交所：台股若非理性連續下跌將採穩定措施,Gartner 估 2027 年 AI 基礎建設支出 2.397 兆美元，年增 53%,政策,TSM,up,https://www.cna.com.tw/news/afe/202611160211.aspx
+2026-11-17,2026-11-17,6,2026-11-17,美媒：輝達董事會未考慮讓黃仁勳回任,川普稱不介意黃仁勳回任；財長要求向外尋找新執行長,AI／半導體,NVDA,down,https://www.cna.com.tw/news/aopl/202611170006.aspx
+2026-11-17,2026-11-17,7,2026-11-11,美商務部傳將限制中國遠端使用海外資料中心的先進 AI 晶片,The Information 報導規定接近定案，可能本月公布,政策,NVDA;AMD;SMH,down,https://letsdatascience.com/news/commerce-department-reportedly-finalizing-rule-blocking-chin-4894721b
+2026-11-17,2026-11-17,8,2026-11-18,Anthropic IPO 週三定價、週四掛牌，每股 70～78 美元,AI 族群本週另一個焦點,IPO,QQQ;NASDAQ,neutral,https://udn.com/news/story/6811/9882655
+2026-11-17,2026-11-17,9,2026-11-16,輝達財報關注：中國曝險、記憶體價格壓力與領導交接,柯蕾絲 8 月指引營收 1080 億美元、毛利率 74%,AI／半導體,NVDA;MU,neutral,https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html
+2026-11-17,2026-11-17,10,2026-11-16 台股收盤,台股 11/16 跌 6.03%，跌停近 170 檔，融資維持率降至 177%,追繳線 130%，融資斷頭風險升溫,亞洲,TSM,down,https://www.cna.com.tw/news/afe/202611160241.aspx
