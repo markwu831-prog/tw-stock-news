@@ -219,3 +219,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-17,2026-11-17,8,2026-11-18,Anthropic IPO 週三定價、週四掛牌，每股 70～78 美元,AI 族群本週另一個焦點,IPO,QQQ;NASDAQ,neutral,https://udn.com/news/story/6811/9882655
 2026-11-17,2026-11-17,9,2026-11-16,輝達財報關注：中國曝險、記憶體價格壓力與領導交接,柯蕾絲 8 月指引營收 1080 億美元、毛利率 74%,AI／半導體,NVDA;MU,neutral,https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html
 2026-11-17,2026-11-17,10,2026-11-16 台股收盤,台股 11/16 跌 6.03%，跌停近 170 檔，融資維持率降至 177%,追繳線 130%，融資斷頭風險升溫,亞洲,TSM,down,https://www.cna.com.tw/news/afe/202611160241.aspx
+2026-11-18,2026-11-18,1,2026-11-17 美東盤後,輝達第三季營收 1158 億美元年增 103%，第四季財測約 1300 億美元優於預期,調整後 EPS 2.68 美元優於 2.48；資料中心營收 1076 億美元；盤後一度漲近 5%,AI／半導體,NVDA;SMH;SOX;TSM;MU,up,https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html
+2026-11-18,2026-11-18,2,2026-11-17 美東盤後,輝達董事長瓊斯：董事會一致接受辭職，無意讓黃仁勳回任,黃仁勳先前表示若董事會邀請願意回任；董事會尚未回應顧問角色,AI／半導體,NVDA,neutral,https://www.chartmill.com/news/NKE/Chartmill-58852-stock-market-today-nvidia-beats-raises-kress-software-selloff-anthropic-ipo-nike-disney-2026-11-18
+2026-11-18,2026-11-18,3,2026-11-18 韓股收盤,KOSPI 漲 1.99% 收 5067.44 站回 5000 點，SK 海力士 +4.19%、三星 +2.31%,開盤大漲 2.6% 後一度翻黑，午後回升；三星電機獲輝達載板訂單漲 7.43%,亞洲,MU;SMH,up,https://www.koreatimes.co.kr/economy/others/20261118/kospi-retakes-5000-after-nvidia-earnings-results-spur-chip-rally
+2026-11-18,2026-11-18,4,2026-11-18 台股收盤,台股小漲 0.26% 收 40194.91 點，台積電 +0.2% 至 2175 元,開盤大漲約 846 點後一度翻黑；散熱、載板、PCB 等跌深族群反彈，金融股 −3.22%,亞洲,TSM;SMH,up,https://www.cna.com.tw/news/afe/202611180148.aspx
+2026-11-18,2026-11-18,5,2026-11-19,美國 AI 晶片新規 11/19 生效，管制先進晶片與遠端伺服器存取,馬來西亞、新加坡等列為高轉運風險地區,政策,NVDA;AMD;TSM;SMH,down,https://www.cna.com.tw/news/afe/202611170306.aspx
+2026-11-18,2026-11-18,6,2026-11-17 收盤,道瓊重挫 849 點，標普創五個月低，軟體股領跌,Salesforce −9.45%；標普 11 類股全數下跌，VIX 連四天上升,美股,VOO;QQQ,down,https://cappnotes.substack.com/p/closing-look-tuesday-november-17
+2026-11-18,2026-11-18,7,2026-11-18,Anthropic IPO 今晚定價、明天掛牌，市場擔心衝擊軟體股,軟體股被視為受 AI 威脅的族群,IPO,QQQ;NASDAQ,neutral,https://www.chartmill.com/news/NKE/Chartmill-58852-stock-market-today-nvidia-beats-raises-kress-software-selloff-anthropic-ipo-nike-disney-2026-11-18
+2026-11-18,2026-11-18,8,2026-11-17,12 月升息機率約 95%,聯準會官員持續談升息,利率,VOO;QQQ,down,https://uanalyze.com.tw/articles/6692059950
+2026-11-18,2026-11-18,9,2026-11-17,輝達減持英特爾 25% 持股，出售約 55 億美元,英特爾 11/17 收跌 0.54%,半導體,SMH;SOX,neutral,https://cappnotes.substack.com/p/closing-look-tuesday-november-17
+2026-11-18,2026-11-18,10,2026-11-17,市調：美嚴控 AI 晶片出口，部分 AI 伺服器訂單可能遞延,台灣代工訂單需美國客戶申請許可,AI 供應鏈,TSM,down,https://www.cna.com.tw/news/afe/202611170256.aspx
