@@ -229,3 +229,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-18,2026-11-18,8,2026-11-17,12 月升息機率約 95%,聯準會官員持續談升息,利率,VOO;QQQ,down,https://uanalyze.com.tw/articles/6692059950
 2026-11-18,2026-11-18,9,2026-11-17,輝達減持英特爾 25% 持股，出售約 55 億美元,英特爾 11/17 收跌 0.54%,半導體,SMH;SOX,neutral,https://cappnotes.substack.com/p/closing-look-tuesday-november-17
 2026-11-18,2026-11-18,10,2026-11-17,市調：美嚴控 AI 晶片出口，部分 AI 伺服器訂單可能遞延,台灣代工訂單需美國客戶申請許可,AI 供應鏈,TSM,down,https://www.cna.com.tw/news/afe/202611170256.aspx
+2026-11-19,2026-11-19,1,2026-11-19 台股收盤,台股重挫 4.40% 跌破 4 萬點與年線，台積電 −3.4% 至 2100 元,櫃買指數 −7.22%，逾 200 檔跌停；外資 11/18 調節台積電逾 1.5 萬張、三天賣超逾 1848 億元,亞洲,TSM;SMH,down,https://www.cna.com.tw/news/afe/202611190148.aspx
+2026-11-19,2026-11-19,2,2026-11-19 韓股收盤,KOSPI 漲 1.39% 收 5137.89，SK 海力士 +3.41%、三星 +1.13%,連兩天上漲；Anthropic 掛牌前 AI 投資回報題材帶動,亞洲,MU;SMH;SOX,up,https://www.koreajoongangdaily.com/business/kospi-chip-tourism-shares-jump-onnbspanthropic-ipo-buzz-koreachina-fta/12981953
+2026-11-19,2026-11-19,3,2026-11-19,Anthropic 今天在那斯達克掛牌，IPO 定價每股 83 美元高於區間,亞馬遜 11/18 因持股價值 +3.82%,IPO,QQQ;NASDAQ,up,https://cappnotes.substack.com/p/closing-look-wednesday-november-18
+2026-11-19,2026-11-19,4,2026-11-18 收盤,輝達財報後開高翻黑 −2.89%，連五天下跌；AMD +5.31%、博通 +3.64%,費半 +0.10%、那斯達克 +0.42%，標普 −0.23% 連五黑,美股,NVDA;AMD;SOX;QQQ,neutral,https://ec.ltn.com.tw/article/breakingnews/5645706
+2026-11-19,2026-11-19,5,2026-11-18,美媒：輝達 2022 年牽線阿里巴巴與黃樂，涉嫌協助規避美國晶片管制,輝達治理與出口合規疑慮再擴大,AI／半導體,NVDA,down,https://www.cna.com.tw/news/aopl/202611180324.aspx
+2026-11-19,2026-11-19,6,2026-11-18,輝達全面停止對中國出貨 Hopper 晶片,上季相關銷售約 24 億美元,AI／半導體,NVDA,down,https://uanalyze.com.tw/articles/9798860036
+2026-11-19,2026-11-19,7,2026-11-19,美國 AI 晶片出口新規今天生效,管制先進晶片與遠端伺服器存取；馬來西亞、新加坡列高轉運風險,政策,NVDA;AMD;TSM,down,https://www.cna.com.tw/news/afe/202611170306.aspx
+2026-11-19,2026-11-19,8,2026-11-18,聯準會會議紀要與沃勒維持升息預期，美元走強,新台幣跌至逾 19 個月新低,利率,VOO;QQQ,down,https://cappnotes.substack.com/p/closing-look-wednesday-november-18
+2026-11-19,2026-11-19,9,2026-11-18,美政府報告：中國尋求取得輝達先進晶片用於 AI 武器,出口管制可能進一步收緊,政策,NVDA;SMH,down,https://www.cna.com.tw/news/aopl/202611180358.aspx
+2026-11-19,2026-11-19,10,2026-11-19,路透：川普政府擬要求美企揭露中國 AI 模型使用情況,美中科技對抗升溫,政策,QQQ,down,https://www.cna.com.tw/news/aopl/202611190002.aspx
