@@ -249,3 +249,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-20,2026-11-20,8,11/20 美東,聯準會理事沃勒、庫克今天發言,10 月會議紀要顯示多數官員認為未來幾個月可能需要升息，並視 AI 需求為通膨風險,利率,VOO;QQQ;NASDAQ,down,https://mlq.ai/news/what-to-watch-friday-nov-20-anthropics-second-day-intuits-mailchimp-sale-feds-cook-and-waller-and-japan-cpi/
 2026-11-20,2026-11-20,9,11/20,Anthropic 掛牌第二天，台積電以 5 億美元認購其股份,首日開盤 111.5 美元、收 97.17 美元（承銷價 83 美元）,AI,TSM;QQQ,neutral,https://www.cna.com.tw/news/afe/202611200004.aspx
 2026-11-20,2026-11-20,10,11/20,今天是月選擇權結算日，荷莫茲海峽油輪受阻推升油價,選擇權到期可能放大尾盤波動；油價上漲增加通膨壓力,總經,VOO;QQQ,neutral,https://mlq.ai/news/what-to-watch-friday-nov-20-anthropics-second-day-intuits-mailchimp-sale-feds-cook-and-waller-and-japan-cpi/
+2026-11-23,2026-11-23,1,11/23 台股收盤,台股開低後強彈 +2.16% 收 36811.89 點，聯發科、台達電漲停,盤中低點 35442 點；台積電 +1.5% 收 2030 元；當天全面禁止平盤以下放空上路，國安基金已表態護盤,亞洲,TSM;SMH;SOX,up,https://www.cna.com.tw/news/afe/202611210127.aspx
+2026-11-23,2026-11-23,2,11/23 韓股收盤,KOSPI −3.31% 收 4708.54，三星 −3.06%、SK 海力士 −2.52%,盤中一度跌逾 5% 後跌幅收斂，記憶體股連三跌,亞洲,MU;SMH;SOX,down,https://fourweekmba.com/ai-kospi-ends-down-3-31-48-off-its-high-fund-decision-waits/
+2026-11-23,2026-11-23,3,11/20 收盤,費半崩跌 10.73%，那指 −5.28%，道瓊與標普進入修正,VIX 創 2025 年 4 月以來新高；那指上週累計約 −10%,美股,SMH;SOX;QQQ;NASDAQ;VOO,down,https://www.cna.com.tw/news/afe/202611210015.aspx
+2026-11-23,2026-11-23,4,11/20,路透：美國 SEC 調查輝達潛在會計問題,輝達 11/20 收 125.53 美元（−14.01%），SEC 不予置評,個股,NVDA,down,https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627
+2026-11-23,2026-11-23,5,11/23,美國國家情報總監調查與黃仁勳相關的中國間諜嫌疑,輝達爭議擴大到國安層面,個股,NVDA,down,https://www.cna.com.tw/news/aopl/202611233001.aspx
+2026-11-23,2026-11-23,6,11/22,紐時：中國國安部長期關注 AI 晶片,輝達醜聞涉及國安層面，出口管制可能再收緊,地緣政治,NVDA;AMD;TSM,down,https://www.cna.com.tw/news/aopl/202611220182.aspx
+2026-11-23,2026-11-23,7,11/25 預定,本週焦點：10 月核心 PCE（預估年增約 3.2%）、第三季 GDP,12 月升息一碼機率逾 90%；感恩節週四休市、週五提前收盤,利率,VOO;QQQ;NASDAQ,down,https://www.fxempire.com/forecasts/article/the-week-ahead-pce-in-focus-after-ai-sell-off-in-holiday-shortened-week-1646337
+2026-11-23,2026-11-23,8,11/24 預定,戴爾週二財報，檢驗 AI 伺服器需求,亞德諾、迪爾也將公布財報,財報,NVDA;SMH,neutral,https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-11-23/
+2026-11-23,2026-11-23,9,11/22,台積電 ADR 週五 −9.48%，台股單週跌 17.5% 創紀錄,經濟部稱賣壓尚未影響訂單,台股,TSM,neutral,https://www.cna.com.tw/news/afe/202611220085.aspx
+2026-11-23,2026-11-23,10,11/23,日本股市休市（勤勞感謝日）,日股本週二才會反應上週五美股崩跌,亞洲,SMH;SOX,neutral,https://www.ibtimes.com.au/nikkei-225-falls-ai-stock-selloff-softbank-chipmakers-1878993
