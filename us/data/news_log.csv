@@ -259,3 +259,13 @@ run_date,session,rank,published,headline,detail,category,tickers,impact,source_u
 2026-11-23,2026-11-23,8,11/24 預定,戴爾週二財報，檢驗 AI 伺服器需求,亞德諾、迪爾也將公布財報,財報,NVDA;SMH,neutral,https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-11-23/
 2026-11-23,2026-11-23,9,11/22,台積電 ADR 週五 −9.48%，台股單週跌 17.5% 創紀錄,經濟部稱賣壓尚未影響訂單,台股,TSM,neutral,https://www.cna.com.tw/news/afe/202611220085.aspx
 2026-11-23,2026-11-23,10,11/23,日本股市休市（勤勞感謝日）,日股本週二才會反應上週五美股崩跌,亞洲,SMH;SOX,neutral,https://www.ibtimes.com.au/nikkei-225-falls-ai-stock-selloff-softbank-chipmakers-1878993
+2026-11-24,2026-11-24,1,11/24 台股收盤,台股 +8.99% 收 40122.35 點，史上最大單日漲點,+3310.46 點，上市櫃 621 檔漲停，站回 4 萬點,亞洲,TSM;SMH;SOX,up,https://mlq.ai/news/taiwans-taiex-closes-up-9-and-the-kospi-tops-5000-as-asian-chipmakers-rally-on-huangs-return/
+2026-11-24,2026-11-24,2,11/24 韓股收盤,KOSPI 約 +6.3% 收 5006 點，SK 海力士 +6.73%、三星 +6.70%,站回 5000 點；漲幅仍小於美光前一晚的 +19%,亞洲,MU;SMH;SOX,up,https://www.newsbreak.com/tradingkey-331884976/5026201600897-nvidia-rally-drives-japan-and-south-korea-stock-rebound-kospi-closes-up-6-to-reclaim-5-000-nikkei-225-rises-nearly-4-kioxia-surges-nearly-10
+2026-11-24,2026-11-24,3,11/24 日股收盤,日經 +3.91% 收 58644.63，愛德萬 +12.5%、東京威力 +7.7%,連假後首日，同時反應上週五崩跌與週一暴漲,亞洲,SMH;SOX;NVDA,up,https://fourweekmba.com/ai-asia-closes-first-session-after-huangs-return/
+2026-11-24,2026-11-24,4,11/23 收盤,黃仁勳回任，輝達 +31.48%，費半大漲約 14%，那指 +6.5%,標普 +4.7%，三大指數創 2025 年 4 月以來最大單日漲幅；記憶體股約 +18%,美股,NVDA;SMH;SOX;QQQ;NASDAQ;VOO,up,https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html
+2026-11-24,2026-11-24,5,11/23,路透：輝達與董事會在黃仁勳回任後仍有法律風險,SEC、國會、加州與馬來西亞當局仍在調查；董事會委任律所獨立調查,個股,NVDA,down,https://www.investing.com/news/stock-market-news/explainernvidia-and-board-still-face-legal-risks-after-jensen-huangs-return-5047037
+2026-11-24,2026-11-24,6,11/23,美國調查 Megaspeed 與黃樂，輝達晶片案出現新人物,黃仁勳與法務長 12/1～12/2 接受眾院三委員會閉門訪談,個股,NVDA,down,https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html
+2026-11-24,2026-11-24,7,11/23,台積電：未見客戶訂單或出貨改變,預估 2026 年台灣半導體產值年增逾 40%,個股,TSM,up,https://www.cna.com.tw/news/afe/202611230249.aspx
+2026-11-24,2026-11-24,8,11/24 盤後,戴爾今天盤後公布財報，檢驗 AI 伺服器需求,亞德諾也將公布財報,財報,NVDA;SMH,neutral,https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-11-23/
+2026-11-24,2026-11-24,9,11/25 預定,明天公布核心 PCE、第三季 GDP、耐久財訂單,核心 PCE 預估年增約 3.2%；12 月升息機率逾 90%,利率,VOO;QQQ;NASDAQ,down,https://www.fxempire.com/forecasts/article/the-week-ahead-pce-in-focus-after-ai-sell-off-in-holiday-shortened-week-1646337
+2026-11-24,2026-11-24,10,11/26,感恩節週四休市、週五提前收盤,假期前成交清淡，波動可能放大,總經,VOO;QQQ,neutral,https://www.fxempire.com/forecasts/article/the-week-ahead-pce-in-focus-after-ai-sell-off-in-holiday-shortened-week-1646337
